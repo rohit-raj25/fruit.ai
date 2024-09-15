@@ -113,8 +113,8 @@ const Signup= () => {
     //     <button type="submit">Sign Up</button>
     //   </form>
     // </div>
-    <div className="min-h-screen h-full flex flex-col  justify-center bg-gray-100">
-    <div className="w-full h-[100vh] flex flex-col max-w-xs p-6 justify-center bg-white  sm:max-w-sm">
+    <div className="min-h-screen h-full w-full flex flex-col items-center justify-center bg-gray-100">
+    <div className="w-full h-[100vh] flex flex-col max-w-s p-6 justify-center bg-white  sm:max-w-sm">
       <h2 className="text-center text-2xl  font-bold mb-4">{isLogin ? 'Login' : 'Register'}</h2>
       <p className="text-center text-sm mb-4">
         By signing in you are agreeing to our{' '}
