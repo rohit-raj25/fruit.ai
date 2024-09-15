@@ -13,7 +13,7 @@ const About = () => {
         </p>
 
         {/* About Button */}
-       <button className="!bg-black text-white py-2 px-6 rounded-full text-sm hover:!bg-gray-800">
+       <button className="!bg-black text-white py-2 my-5 px-6 rounded-full text-sm hover:!bg-gray-800">
   ABOUT
 </button>
 

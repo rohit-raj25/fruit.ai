@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { RiAccountBoxLine } from "react-icons/ri";
 import { FaFacebookF, FaInstagram, FaPinterestP, FaLinkedinIn } from 'react-icons/fa';
 import { FiMail, FiLock } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 // import { useHistory } from 'react-router-dom';
 
@@ -15,12 +16,13 @@ const Signup= () => {
   
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+  const navigate = useNavigate();
 
 
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    if (!name || !email || !password) {
+    if (!email || !password) {
       alert('All fields are required!');
       return;
     }
@@ -31,6 +33,8 @@ const Signup= () => {
     await axios.post('http://localhost:3000/signin', userData)
         .then((res) => {
             console.log(res.data);
+            navigate('/home');
+
         })
         .catch((err) => {
             console.error(err);
