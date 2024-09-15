@@ -30,7 +30,7 @@ const Signup= () => {
 
     // Simulate user signup (In real-world use, call API)
     const userData = { email, password };
-    await axios.post('http://localhost:3000/signin', userData)
+    await axios.post('https://fruit-ai-3.onrender.com/signin', userData)
         .then((res) => {
             console.log(res.data);
             navigate('/home');
@@ -56,7 +56,7 @@ const Signup= () => {
 
     // Simulate user signup (In real-world use, call API)
     const userData = { name, email, password };
-    await axios.post('http://localhost:3000/signup', userData)
+    await axios.post('https://fruit-ai-3.onrender.com/signup', userData)
         .then((res) => {
             console.log(res.data);
         })
